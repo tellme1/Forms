@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="Forms.css">
+</head>
+<body>
+<div>
+    <h1>Урок "Формы": теги и их атрибуты</h1>
+    <h2>Расскажите немного о себе...</h2>
+    <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные</p>
+    <fieldset>
+        <legend><b>Коротко о себе</b></legend>
+        <form action="#">Им'я<input type="text"></form>
+        <form action="#">Фамилия<input type="text"></form>
+        <form action="#">Пол<input type="radio" name="radio">Мужской
+            <input type="radio" name="radio">Женский
+        </form>
+        <form>Возраст<input type="number" max="200" min="1">лет</form>
+    </fieldset>
+    <fieldset id="fs2">
+        <legend><b>Подробнее о себе</b></legend>
+        <form action="#">
+            <ul class="ul">
+                <li><input type="radio" name="radio">Молодой человек</li>
+                <li><input type="radio" name="radio">Девушка</li>
+            </ul>
+        </form>
+        <form action="#"><input type="text">Дата рождения</form>
+        <form action="#"><input type="text">Семейное положение</form>
+        <form action="#"><input type="text">Социальный статус</form>
+        <form action="#"><input type="text">Местожительство</form>
+        <p><b>Что вы обычно делаете на выходных:</b></p>
+        <ul class="ul">
+            <li>
+                <form action="#"><input type="checkbox">Сплю</form>
+            </li>
+            <li>
+                <form action="#"><input type="checkbox">Гуляю с друзьями</form>
+            </li>
+            <li>
+                <form action="#"><input type="checkbox">Хожу на рыбалку</form>
+            </li>
+            <li>
+                <form action="#"><input type="checkbox">Играю в игры</form>
+            </li>
+        </ul>
+        <p><b>Рассказать о формах в книге, посвященной HTML:</b></p>
+        <select name="select">
+            <optgroup>
+                <option value="">Первая позиция.</option>
+                <option value="">Вторая позиция.</option>
+                <option value="">Третья позиция.</option>
+            </optgroup>
+        </select>
+        <p><b>Сколько книг вы прочитали за свою жизнь:</b></p>
+        <form action="#">
+        <ul class="ul">
+                <li>
+                    <input type="radio" name="radio">0-10
+                </li>
+                <li>
+                    <input type="radio" name="radio">11-20
+                </li>
+                <li>
+                    <input type="radio" name="radio">21-50
+                </li>
+                <li>
+                    <input type="radio" name="radio">51-и больше
+                </li>
+        </ul>
+            </form>
+        <p><b>Ваши коментарии:</b></p>
+        <textarea name="name" cols="30" rows="10"></textarea>
+        <ul class="ul">
+            <li><select name="select" multiple>
+                <optgroup>
+                    <option value="">Первая позиция.</option>
+                    <option value="">Вторая позиция.</option>
+                    <option value="">Третья позиция.</option>
+                </optgroup>
+            </select></li>
+        </ul>
+
+    </fieldset>
+    <fieldset>
+        <legend><b>И в заключении</b></legend>
+        <input type="text" placeholder="Это поле было введено до вас">
+        <p><b>Email</b></p>
+        <input type="email">
+        <p><b>Ваши впечетления</b></p>
+        <ul class="ul">
+            <li>
+                <form action="#"><input type="checkbox">Норм</form>
+            </li>
+            <li>
+                <form action="#"><input type="checkbox">Не норм</form>
+            </li>
+            <li>
+                <form action="#"><input type="checkbox">Такое</form>
+            </li>
+        </ul>
+        <p><b>На сколько сложная задача?</b></p>
+        <form action="#">
+            <ul class="ul">
+                <li>
+                    <input type="radio" name="radio">Так себе
+                </li>
+                <li>
+                    <input type="radio" name="radio">Сложновато
+                </li>
+                <li>
+                    <input type="radio" name="radio">Еле справились
+                </li>
+            </ul>
+        </form>
+    </fieldset>
+    <input type="submit">
+</div>
+
+</body>
+</html>
